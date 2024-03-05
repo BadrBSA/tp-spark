@@ -8,17 +8,19 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "~3.11.1"
+python = "~3.10.12"
 
 [tool.poetry.dev-dependencies]
-pyspark = "3.4.0"
+pyspark = "3.5.0"
 pytest = "7.1.2"
 awsglue-dev = "^2021.12.30"
 
 [tool.poetry.scripts]
 wordcount = "src.fr.hymaia.exo1.main:main"
 clean = "src.fr.hymaia.exo2.spark_clean_job:main"
+villes = "src.fr.hymaia.exo2.main:main"
 aggregate = "src.fr.hymaia.exo2.spark_aggregate_job:main"
 python_udf = "src.fr.hymaia.exo4.python_udf:main"
 scala_udf = "src.fr.hymaia.exo4.scala_udf:main"
 no_udf = "src.fr.hymaia.exo4.no_udf:main"
+pandas_udf = "src.fr.hymaia.exo4.pandas_udf:main"

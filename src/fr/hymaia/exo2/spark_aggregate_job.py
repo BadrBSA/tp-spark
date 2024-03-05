@@ -1,6 +1,5 @@
 import pyspark.sql.functions as f
 from pyspark.sql import SparkSession
-from pyspark.sql import Row
 
 
 def main():

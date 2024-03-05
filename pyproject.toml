@@ -8,10 +8,10 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "~3.10.12"
+python = "~3.11.1"
 
 [tool.poetry.dev-dependencies]
-pyspark = "3.3.0"
+pyspark = "3.4.0"
 pytest = "7.1.2"
 awsglue-dev = "^2021.12.30"
 

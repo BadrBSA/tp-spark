@@ -1,5 +1,5 @@
 import pyspark.sql.functions as f
-from pyspark.sql import SparkSession, Row
+from pyspark.sql import SparkSession
 
 def main():
     spark = SparkSession.builder \
@@ -14,7 +14,7 @@ def main():
     df_join = join_df(df_clients_over_18, df_city, "zip")
     df_with_columns = get_departments(df_join)
     
-    df_with_columns.filter(f.col("departement") == "2B").show()
+    df_with_columns.filter(f.col("departement") == "2B")
 
     df_with_columns.write.parquet("data/exo2/clean", mode='overwrite')
 

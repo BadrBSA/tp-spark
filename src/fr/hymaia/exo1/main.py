@@ -8,8 +8,6 @@ def main():
         .master("local[*]") \
         .getOrCreate()
     
-    print("Hello world!")
-    
     df_csv = spark.read.csv("src/resources/exo1/data.csv", header=True)
         
     df_csv = wordcount(df_csv, 'text')
